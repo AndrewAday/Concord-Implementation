@@ -1,0 +1,10 @@
+{
+  "zookeeper_hosts": "localhost:2181",
+  "zookeeper_path": "/concord",
+  "executable_arguments": ["bcd.py"],
+  "executable_name": "runner.bash",
+  "compress_files": ["bcd.py", "generators.py", "detector.py", "distributions.py", "runner.bash"],
+  "computation_name": "bcd",
+  "mem": 512,
+  "cpus": 0.5
+}
