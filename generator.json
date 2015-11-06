@@ -1,0 +1,10 @@
+{
+  "zookeeper_hosts": "localhost:2181",
+  "zookeeper_path": "/concord",
+  "executable_arguments": ["generator.py"],
+  "executable_name": "runner.bash",
+  "compress_files": ["generator.py", "generators.py", "runner.bash"],
+  "computation_name": "generator",
+  "mem": 512,
+  "cpus": 0.5
+}
