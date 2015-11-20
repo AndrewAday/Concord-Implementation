@@ -7,7 +7,7 @@ from concord.computation import (
     serve_computation
 )
 
-from generator import hazard, p
+from generators import hazard, p
 from detector import BayesianChangepointDetection
 from distributions import Gaussian
 
@@ -30,9 +30,9 @@ class Bcd(Computation):
         raise Exception('process_timer not implemented')
 
     def process_record(self, ctx, record):
-        result = detector.step(float(record.data))
+        result = self.detector.step(float(record.data))
         logger.info(record.data)
-        logger.info(resut)
+        # logger.info(result)
         logger.info(result.argmax())
         # self.pidx += 1
         # if self.dict.has_key(record.key):

@@ -7,7 +7,7 @@ from concord.computation import (
     Metadata,
     serve_computation
 )
-from generators import test1
+from generators import test1, test0
 
 import logging
 logging.basicConfig()
@@ -21,7 +21,8 @@ def time_millis():
 class Generator(Computation):
     def __init__(self):
         self.words = ['foo', 'bar', 'baz', 'fiz', 'buzz']
-        self.X = test1()
+        # self.X = test1()
+        self.X = test0()
         self.indx = 0
 
     def sample(self):

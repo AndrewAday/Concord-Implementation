@@ -1,6 +1,10 @@
 import numpy as np
 import math
 
+def test0():
+    X = [0] * 100 + [1] * 100
+    return X
+
 def test1():
     X = np.zeros(1024)
     e = np.random.normal(size=1024)
