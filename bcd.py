@@ -8,7 +8,7 @@ from concord.computation import (
 )
 
 from generators import hazard, p
-from detector import BayesianChangepointDetection
+from computations import BayesianChangepointDetection
 from distributions import Gaussian
 
 
