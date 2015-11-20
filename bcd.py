@@ -32,15 +32,7 @@ class Bcd(Computation):
     def process_record(self, ctx, record):
         result = self.detector.step(float(record.data))
         logger.info(record.data)
-        # logger.info(result)
         logger.info(result.argmax())
-        # self.pidx += 1
-        # if self.dict.has_key(record.key):
-        #     self.dict[record.key] += 1
-        # else:
-        #     self.dict[record.key] = 1
-        # if (self.pidx % 1024) == 0:
-        #     logger.info(self.dict)
 
     def metadata(self):
         return Metadata(
